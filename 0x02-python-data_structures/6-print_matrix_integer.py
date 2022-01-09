@@ -1,8 +1,9 @@
-#!/bin/python3
-	For x in matrix =
-		Count = 0
-	For y in x:
-		If count < len(x)-1:
-			print("y ")
-		Else:
-            print("y")
+#!/usr/bin/python3
+def print_matrix_integer(matrix=[[]]):
+    if matrix == [[]]:
+        print()
+    else:
+        for i in matrix:
+            for j in i:
+                print("{:d}".format(j), end=" " if j != i[-1] else "")
+            print()
