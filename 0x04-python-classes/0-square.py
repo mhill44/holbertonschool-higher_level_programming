@@ -1,8 +1,10 @@
 #!/usr/bin/python3
+"""A simple Square class that defines a square by its size."""
 
 class Square:
-    """A Square class; defines a square by its size.
-   Prototype:
+    """A simple Square class that defines a square by its size.
+
+    Attributes:
         __size (int): The size of the square.
     """
     def __init__(self, size=0):
