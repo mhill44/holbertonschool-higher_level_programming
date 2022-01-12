@@ -80,7 +80,6 @@ class Square:
             raise ValueError("size must be >= 0")
         return self.__size
 
-
     def my_print(self):
         """Prints to stdout the square with the character.
                 Prints # if size is 0.
