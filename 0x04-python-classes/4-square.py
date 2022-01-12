@@ -19,7 +19,7 @@ class Square:
         """Initializes the square.
         `size` must be an integer and >= 0.
         `pep8` recommends to use `self.__size` instead of `self.size`.
-        
+
         Returns:
             None
         """
