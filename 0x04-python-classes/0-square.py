@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 
 class Square:
-    """A simple Square class that defines a square by its size.
-
-    Attributes:
+    """A Square class; defines a square by its size.
+   Prototype:
         __size (int): The size of the square.
     """
     def __init__(self, size=0):
