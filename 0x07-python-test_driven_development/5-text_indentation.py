@@ -8,7 +8,7 @@
 def text_indentation(text):
     """ Write a function that prints stuff
 
-    Args:  text (str): the text to print
+    Arguments:  text (str): the text to print
     """
     if type(text) is not str or text == "":
         raise TypeError("text must be a string")
