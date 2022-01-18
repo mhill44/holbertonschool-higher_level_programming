@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-""" Divides all elements of a matrix"""
+""" This divides all elements of a given matrix"""
 
 
 def matrix_divided(matrix, div):
-    """ Controlls the flow of the program
+    """ This Controls the flow of the program
     Args:
-        matrix ([[list]]): list of lists
-        div (int or float): division value
-    Returns:  list of lists
+        matrix ([[list]]): a list of lists
+        div (int or float): the division value
+    Returns: a list of lists
     """
     try:
         identify(matrix)
