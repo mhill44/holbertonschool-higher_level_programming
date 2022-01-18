@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-This module contains the say_my_name function
+This is the module for the function called: Say my name
 """
 
 
