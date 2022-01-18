@@ -6,7 +6,7 @@ This module contains: the text_indentation function
 
 def print_square(size):
     """
-    Result prints a square where size is the len and width
+    Result prints a square where size is the length and width
     of the square
     """
     if type(size) is not int or (type(size) is float and size < 0):
