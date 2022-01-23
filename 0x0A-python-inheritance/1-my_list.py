@@ -5,9 +5,9 @@
 class MyList(list):
     """ My list class """
     def __init__(self):
-        """ Init method """
+        """ Init the method """
         super().__init__()
 
     def print_sorted(self):
-        """ Prints the list in ascending order """
+        """ This prints the list in ascending order """
         print(sorted(self))
