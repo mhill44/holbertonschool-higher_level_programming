@@ -1,33 +1,12 @@
->>> #!/usr/bin/python3
-" My >>> """ My list class """
-' My list class '
->>>
->>>
->>> class MyList(list):
-...       """ My list class """
-...    def __init__(self):
-    ""  File "<stdin>", line 3
-    def __init__(self):
-                      ^
-IndentationError: unindent does not match any outer indentation level
->>>       """ Init the method """
-   super().__  File "<stdin>", line 1
-    """ Init the method """
-    ^
-IndentationError: unexpected indent
->>>         super().__init__()
- def pri  File "<stdin>", line 1
-    super().__init__()
-    ^
-IndentationError: unexpected indent
->>>    def print_sorted(self):
-   """  File "<stdin>", line 1
-    def print_sorted(self):
-    ^
-IndentationError: unexpected indent
->>>       """ This prints the list in ascending order """
-  print(  File "<stdin>", line 1
-    """ This prints the list in ascending order """
-    ^
-IndentationError: unexpected indent
->>>         print(sorted(self))
+>>> MyList = __import__("1-my_list").MyList
+
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.append(5)
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
