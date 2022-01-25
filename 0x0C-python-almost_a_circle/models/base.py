@@ -3,7 +3,7 @@
 
 
 class Base:
-    """ Base Class """
+    """ The Base Class """
 
     __nb_objects = + 1
 
