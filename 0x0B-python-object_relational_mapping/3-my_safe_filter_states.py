@@ -3,11 +3,10 @@
 in the states table of hbtn_0e_0_usa
 where name matches the argument
 and is safe from SQL injections"""
-
-if __name__ == '__main__':
-    
 import MySQLdb
 import sys
+
+if __name__ == '__main__':
 
     """ Connection Variables """
     DB_HOST = 'localhost'
