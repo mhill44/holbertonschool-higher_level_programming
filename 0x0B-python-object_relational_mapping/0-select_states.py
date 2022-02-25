@@ -1,27 +1,16 @@
 #!/usr/bin/python3
-""" Wll select states from a database """
-import MySQLdb
-import sys
+""" Wll select states from the DB hbtn_0e_0_usa"""
 
-if __name__ == "__main__":
+if __name__ == '__main__':
 
-    """ The Connection Variables """
-    DB_HOST = 'localhost'
-    DB_USER = sys.argv[1]
-    DB_PASS = sys.argv[2]
-    DB_NAME = sys.argv[3]
-    DB_PORT = '3306'
+    import MySQLdb
+    import sys
 
-    """ This connects to the DB """
-    db = MySQLdb.connect(host=DB_HOST, port=int(DB_PORT),
-                         user=DB_USER, passwd=DB_PASS,
-                         db=DB_NAME, charset='utf8')
+    db = MySQLdb.connect(host='localhost', port=3306,
+                         user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
 
-    with db.cursor() as cur:
-        cur.execute("SELECT * FROM states ORDER BY id ASC")
-        query_rows = cur.fetchall()
-        for row in query_rows:
-            print(row)
-
-        cur.close()
-        db.close()
+    cur = db.cursor()
+    cur.execute("SELECT * FROM states ORDER BY states.id ASC;")
+    rows = cur.fetchall()
+    for row in rows:
+        print(row)
