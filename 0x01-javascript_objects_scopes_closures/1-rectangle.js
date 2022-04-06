@@ -1,2 +1,2 @@
-#!/bin/node
+#!/usr/bin/node
 #!/* Placeholder Comment */
