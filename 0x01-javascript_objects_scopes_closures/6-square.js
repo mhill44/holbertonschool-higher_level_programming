@@ -3,15 +3,19 @@
 * A class: square that defines a sq and inherits
 * From Square of 5-square.js
 */
-const squareOne = require('./5-square');
-module.exports = class Square extends squareOne {
-  charPrint (C) { // instance method that prints the rectangle using 'C'
-    if (!C) {
-      super.print();
-    } else {
-      for (let x = 0; x < this.width; x++) {
-        console.log(C.repeat(this.width));
+const firstSquare = require('./5-square');
+module.exports = class Square extends Square1 {
+  charPrint (c) {
+    if (c) {
+      this.char = c;
+    }
+    let line = '';
+    for (let i = 0; i < this.height; i++) {
+      for (let j = 0; j < this.width; j++) {
+        line += this.char;
       }
+      console.log(line);
+      line = '';
     }
   }
 };
