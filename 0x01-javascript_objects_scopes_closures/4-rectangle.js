@@ -1,5 +1,5 @@
 #!/usr/bin/node
-/* A class named Rectangle that definies a rectangle */
+/* A class named Rectangle that defs a rectangle */
 
 module.exports = class Rectangle {
   constructor (_w, _h) {
@@ -20,4 +20,4 @@ module.exports = class Rectangle {
     this.width *= 2;
     this.height *= 2;
   }
-}
+};
