@@ -1,2 +1,3 @@
-#!/usr/bin/node
-/* Placeholder Comment */
+$('DIV#update_header').click(function () {
+  $('header').text('New Header!!!');
+});

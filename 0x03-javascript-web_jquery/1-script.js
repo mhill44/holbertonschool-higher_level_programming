@@ -1,2 +1,1 @@
-#!/usr/bin/node
-/* Placeholder Comment */
+$('header').css({ color: '#FF000' });

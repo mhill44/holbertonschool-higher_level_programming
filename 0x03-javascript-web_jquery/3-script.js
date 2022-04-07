@@ -1,2 +1,5 @@
-#!/usr/bin/node
-/* Placeholder Comment */
+$(function () {
+  $('#red_header').click(function () {
+    $('header').addClass('red');
+  });
+});

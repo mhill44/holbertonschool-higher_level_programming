@@ -1,2 +1,5 @@
-#!/usr/bin/node
-/* Placeholder Comment */
+$(function () {
+  $('#toggle_header').click(function () {
+    $('header').toggleClass('red green');
+  });
+});
